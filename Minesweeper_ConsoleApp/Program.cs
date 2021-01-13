@@ -18,9 +18,11 @@ namespace Minesweeper_ConsoleApp
             {
                 Console.Clear();
                 //in parenthesese write number of rows and columns you would like to create
-                Board boardOne = new Board(15, 15);
+                Board boardOne = new Board(8, 8);
+                
                 boardOne.createBombs();
                 boardOne.setBombCounter();
+                boardOne.printBoard();
                 Console.WriteLine("restart? y/n");
                 string answer = Console.ReadLine();
                 if (answer == "n")
