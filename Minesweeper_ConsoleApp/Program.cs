@@ -22,6 +22,9 @@ namespace Minesweeper_ConsoleApp
                 
                 boardOne.createBombs();
                 boardOne.setBombCounter();
+
+                boardOne.hideThemAll();
+
                 boardOne.printBoard();
                 Console.WriteLine("restart? y/n");
                 string answer = Console.ReadLine();
