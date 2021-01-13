@@ -30,5 +30,15 @@ namespace Minesweeper_ClassLibrary
             IsHidden = false;
         }
 
+        public void setVisibleValue()
+        {
+            if (IsBomb)
+                VisibleValue = " * ";
+            if (IsCounter)
+                VisibleValue = " " + BombCounter.ToString() + " ";
+            if (IsHidden)
+                VisibleValue = " ? ";
+        }
+
     }
 }

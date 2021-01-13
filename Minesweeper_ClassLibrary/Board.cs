@@ -15,6 +15,8 @@ namespace Minesweeper_ClassLibrary
 
         public string GameLevel { get; set; }
 
+        public double BombsNum { get; set; }
+
         Random rand = new Random();
 
 
@@ -24,6 +26,7 @@ namespace Minesweeper_ClassLibrary
             Columns = columns;
             TheGrid = new Cell[Rows, Columns];
             GameLevel = "easy";
+            BombsNum = 0;
 
             for (int i = 0; i < Rows; i++)
             {
@@ -34,15 +37,23 @@ namespace Minesweeper_ClassLibrary
             }
         }
 
-        public void hideThemAll()
+        
+
+        public bool checkWin()
         {
+            int revealedCellCount = 0;
             for (int i = 0; i < Rows; i++)
             {
                 for (int j = 0; j < Columns; j++)
                 {
-                    //need to complete
+                    if (TheGrid[i,j].IsHidden == false)
+                    {
+                        revealedCellCount++;
+                    }
                 }
             }
+            
+            return (revealedCellCount == TheGrid.Length - BombsNum);               
         }
 
         public void printBoard()
@@ -52,17 +63,14 @@ namespace Minesweeper_ClassLibrary
                     for (int j = 0; j < Columns; j++)
                     {
                         
-                        if (TheGrid[i, j].IsBomb == true)
+                        if (TheGrid[i, j].IsHidden == false)
                         {
-                        TheGrid[i, j].VisibleValue = " * ";
-                            Console.Write(" * ");
+                        TheGrid[i, j].setVisibleValue();
+                            Console.Write(TheGrid[i,j].VisibleValue);
                         }
                         else
                         {
-                        if (TheGrid[i, j].BombCounter > 0)
-                            Console.Write(" " + TheGrid[i, j].BombCounter + " ");
-                        else
-                            Console.Write(" . ");
+                            Console.Write(" ? ");
                         }
                         
                     }
@@ -88,9 +96,15 @@ namespace Minesweeper_ClassLibrary
                     break;
             }
 
-            for (int i = 0; i < Math.Round(bombPercentage * Rows * Columns); i++)
+            BombsNum = Math.Round(bombPercentage * Rows * Columns);
+
+            for (int i = 0; i < BombsNum; i++)
             {
-                TheGrid[rand.Next(Rows), rand.Next(Columns)].IsBomb = true;
+                int a = rand.Next(Rows);
+                int b = rand.Next(Columns);
+                TheGrid[a, b].IsBomb = true;
+                TheGrid[a, b].IsCounter = false;
+
             }
         }
 

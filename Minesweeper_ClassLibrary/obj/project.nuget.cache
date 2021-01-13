@@ -1,11 +1,11 @@
 {
   "version": 2,
-  "dgSpecHash": "RA9CxRNO44uPSIFXY1IbiYOHbNjwxs/SiV9GRtxaUYHs+d+s6hb4NBG2G7x4TQaxdHBuxBSQQsr/BR/gtt1cUg==",
+  "dgSpecHash": "+gQvrBQDSeJ1SwNmGKSl1JVO8zFzpZHfCZLWHvFsBZ6IX9hKnuhKtC4nosE8MqjSEStCp5x7FeICjIGWatNrQQ==",
   "success": true,
-  "projectFilePath": "C:\\Users\\krysz\\source\\repos\\Minesweeper_Solution\\Minesweeper_ClassLibrary\\Minesweeper_ClassLibrary.csproj",
+  "projectFilePath": "C:\\Users\\Łukasz\\source\\repos\\Minesweeper_Solution\\Minesweeper_ClassLibrary\\Minesweeper_ClassLibrary.csproj",
   "expectedPackageFiles": [
-    "C:\\Users\\krysz\\.nuget\\packages\\microsoft.netcore.platforms\\1.1.0\\microsoft.netcore.platforms.1.1.0.nupkg.sha512",
-    "C:\\Users\\krysz\\.nuget\\packages\\netstandard.library\\2.0.3\\netstandard.library.2.0.3.nupkg.sha512"
+    "C:\\Users\\Łukasz\\.nuget\\packages\\microsoft.netcore.platforms\\1.1.0\\microsoft.netcore.platforms.1.1.0.nupkg.sha512",
+    "C:\\Users\\Łukasz\\.nuget\\packages\\netstandard.library\\2.0.3\\netstandard.library.2.0.3.nupkg.sha512"
   ],
   "logs": []
 }

@@ -18,3 +18,13 @@ C:\Users\krysz\source\repos\Minesweeper_Solution\Minesweeper_ConsoleApp\obj\Debu
 C:\Users\krysz\source\repos\Minesweeper_Solution\Minesweeper_ConsoleApp\obj\Debug\Minesweeper_ConsoleApp.csproj.CopyComplete
 C:\Users\krysz\source\repos\Minesweeper_Solution\Minesweeper_ConsoleApp\obj\Debug\Minesweeper_ConsoleApp.exe
 C:\Users\krysz\source\repos\Minesweeper_Solution\Minesweeper_ConsoleApp\obj\Debug\Minesweeper_ConsoleApp.pdb
+C:\Users\Łukasz\source\repos\Minesweeper_Solution\Minesweeper_ConsoleApp\bin\Debug\Minesweeper_ConsoleApp.exe.config
+C:\Users\Łukasz\source\repos\Minesweeper_Solution\Minesweeper_ConsoleApp\bin\Debug\Minesweeper_ConsoleApp.exe
+C:\Users\Łukasz\source\repos\Minesweeper_Solution\Minesweeper_ConsoleApp\bin\Debug\Minesweeper_ConsoleApp.pdb
+C:\Users\Łukasz\source\repos\Minesweeper_Solution\Minesweeper_ConsoleApp\bin\Debug\Minesweeper_ClassLibrary.dll
+C:\Users\Łukasz\source\repos\Minesweeper_Solution\Minesweeper_ConsoleApp\bin\Debug\Minesweeper_ClassLibrary.pdb
+C:\Users\Łukasz\source\repos\Minesweeper_Solution\Minesweeper_ConsoleApp\obj\Debug\Minesweeper_ConsoleApp.csprojAssemblyReference.cache
+C:\Users\Łukasz\source\repos\Minesweeper_Solution\Minesweeper_ConsoleApp\obj\Debug\Minesweeper_ConsoleApp.csproj.CoreCompileInputs.cache
+C:\Users\Łukasz\source\repos\Minesweeper_Solution\Minesweeper_ConsoleApp\obj\Debug\Minesweeper_ConsoleApp.csproj.CopyComplete
+C:\Users\Łukasz\source\repos\Minesweeper_Solution\Minesweeper_ConsoleApp\obj\Debug\Minesweeper_ConsoleApp.exe
+C:\Users\Łukasz\source\repos\Minesweeper_Solution\Minesweeper_ConsoleApp\obj\Debug\Minesweeper_ConsoleApp.pdb
