@@ -36,41 +36,25 @@ namespace Minesweeper_ClassLibrary
 
         public void printBoard()
         {
-            for (int i = 0; i < Rows + Rows + 1; i++)
+            for (int i = 0; i < Rows; i++)
             {
-                if (!(i % 2 == 0))
-                {
                     for (int j = 0; j < Columns; j++)
                     {
-                        Console.Write("| ");
-                        if (TheGrid[(i-1)/2, j].IsBomb == true)
+                        
+                        if (TheGrid[i, j].IsBomb == true)
                         {
-                            Console.Write("*");
+                            Console.Write(" * ");
                         }
                         else
-                        { 
-                            Console.Write(" ");
+                        {
+                        if (TheGrid[i, j].BombCounter > 0)
+                            Console.Write(" " + TheGrid[i, j].BombCounter + " ");
+                        else
+                            Console.Write(" . ");
                         }
-                        Console.Write(" ");
+                        
                     }
-
-                    Console.Write("|");
-                    //Console.WriteLine("");
-
-                }
-                else
-                {
-                    for (int j = 0; j < Columns; j++)
-                    {
-                        Console.Write("+---");
-
-
-                    }
-                    Console.Write("+");
-                }
-                Console.WriteLine("");
-
-                
+                    Console.WriteLine("");
             }
         }
 
@@ -81,7 +65,7 @@ namespace Minesweeper_ClassLibrary
             
             switch (GameLevel)
             {
-                case "easy": bombPercentage = 0.5f;
+                case "easy": bombPercentage = 0.1f;
                     break;
                 case "normal": bombPercentage = 0.2f;
                     break;
@@ -100,95 +84,42 @@ namespace Minesweeper_ClassLibrary
 
         public void setBombCounter()
         {
-            for (int i = 0; i < Rows + Rows + 1; i++)
+            for (int i = 0; i < Rows; i++)
             {
-                if (!(i % 2 == 0))
-                {
                     for (int j = 0; j < Columns; j++)
                     {
-                        
-                        if (TheGrid[(i - 1) / 2, j].IsBomb == true)
+                        if (TheGrid[i, j].IsBomb == true)
                         {
 
                             //Count bomb code snippet
-                            if(isSafe(((i - 1) / 2) + 1, j + 1))
-                                TheGrid[((i - 1) / 2) + 1, j + 1].BombCounter++;
+                            if(isSafe(i + 1, j + 1))
+                                TheGrid[i + 1, j + 1].BombCounter++;
 
-                            if(isSafe(((i - 1) / 2) + 1, j + 0))
-                                TheGrid[((i - 1) / 2) + 1, j + 0].BombCounter++;
+                            if(isSafe(i + 1, j + 0))
+                                TheGrid[i + 1, j + 0].BombCounter++;
 
-                            if (isSafe(((i - 1) / 2) + 1, j - 1))
-                                TheGrid[((i - 1) / 2) + 1, j - 1].BombCounter++;
+                            if (isSafe(i + 1, j - 1))
+                                TheGrid[i + 1, j - 1].BombCounter++;
 
-                            if (isSafe(((i - 1) / 2) + 0, j + 1))
-                                TheGrid[((i - 1) / 2) + 0, j + 1].BombCounter++;
+                            if (isSafe(i + 0, j + 1))
+                                TheGrid[i + 0, j + 1].BombCounter++;
 
-                            if (isSafe(((i - 1) / 2) + 0, j - 1))
-                                TheGrid[((i - 1) / 2) + 0, j - 1].BombCounter++;
+                            if (isSafe(i + 0, j - 1))
+                                TheGrid[i + 0, j - 1].BombCounter++;
 
-                            if (isSafe(((i - 1) / 2) - 1, j + 1))
-                                TheGrid[((i - 1) / 2) - 1, j + 1].BombCounter++;
+                            if (isSafe(i - 1, j + 1))
+                                TheGrid[i - 1, j + 1].BombCounter++;
 
-                            if (isSafe(((i - 1) / 2) - 1, j - 1))
-                                TheGrid[((i - 1) / 2) - 1, j - 1].BombCounter++;
+                            if (isSafe(i - 1, j - 1))
+                                TheGrid[i - 1, j - 1].BombCounter++;
 
-                            if (isSafe(((i - 1) / 2) - 1, j + 0))
-                                TheGrid[((i - 1) / 2) - 1, j + 0].BombCounter++;
+                            if (isSafe(i - 1, j + 0))
+                                TheGrid[i - 1, j + 0].BombCounter++;
                         }
                         
                     }
-
-                }
-
             }
-
-
-            for (int i = 0; i < Rows + Rows + 1; i++)
-            {
-                if (!(i % 2 == 0))
-                {
-                    for (int j = 0; j < Columns; j++)
-                    {
-                        Console.Write("| ");
-                        if (TheGrid[(i - 1) / 2, j].IsBomb == true)
-                        {
-                            Console.Write("*");
-                            
-                        }
-                        else
-                        {
-                            if (TheGrid[(i - 1) / 2, j].BombCounter > 0)
-                            {
-                                Console.Write(TheGrid[(i - 1) / 2, j].BombCounter);
-                            }
-                            else
-                            {
-                                Console.Write(" ");
-                            }
-                        }
-                        Console.Write(" ");
-                    }
-
-                    Console.Write("|");
-                    
-
-                }
-                else
-                {
-                    for (int j = 0; j < Columns; j++)
-                    {
-                        Console.Write("+---");
-
-
-                    }
-                    Console.Write("+");
-                }
-                Console.WriteLine("");
-
-
-            }
-
-
+            
         }
 
         private bool isSafe(int x, int y)
