@@ -34,6 +34,17 @@ namespace Minesweeper_ClassLibrary
             }
         }
 
+        public void hideThemAll()
+        {
+            for (int i = 0; i < Rows; i++)
+            {
+                for (int j = 0; j < Columns; j++)
+                {
+                    //need to complete
+                }
+            }
+        }
+
         public void printBoard()
         {
             for (int i = 0; i < Rows; i++)
@@ -43,6 +54,7 @@ namespace Minesweeper_ClassLibrary
                         
                         if (TheGrid[i, j].IsBomb == true)
                         {
+                        TheGrid[i, j].VisibleValue = " * ";
                             Console.Write(" * ");
                         }
                         else
