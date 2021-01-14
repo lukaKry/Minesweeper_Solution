@@ -17,32 +17,48 @@ namespace Minesweeper_ConsoleApp
             while (restart)
             {
                 Console.Clear();
-                //in parenthesese write number of rows and columns you would like to create
-                Board boardOne = new Board(4, 4);
+                //in parentheses write number of rows and columns you would like to create
+                Board boardOne = new Board(8, 8);
                 
                 boardOne.createBombs();
                 boardOne.setBombCounter();
                 boardOne.printBoard();
 
                 bool didWin = false;
-                while (!didWin)
+                bool didLose = false;
+                while (!(didWin || didLose))
                 {
                     
                     Console.WriteLine("Pick row and column number to reveal a cell");
-                    int x = int.Parse(Console.ReadLine());
-                    int y = int.Parse(Console.ReadLine());
-                    boardOne.TheGrid[x, y].IsHidden = false;
-                    //need to add recursion method for unrevealing similiar cells
+                    try
+                    {
+                        //read user input and subtract '1' for easier play (it is easier for player to count the rows and cols starting with one than zero)
+                        int x = int.Parse(Console.ReadLine());
+                        int y = int.Parse(Console.ReadLine());
+                        boardOne.TheGrid[x, y].IsHidden = false;
+                        boardOne.FloodFill(x, y);
+                        Console.Clear();
+                    }
+                    catch
+                    {
+                        Console.Clear();
+                        Console.WriteLine("Pick a number from 0 to {0} for rows \nPick a number from 1 to {1} for columns" , boardOne.Rows, boardOne.Columns);
+                    }
 
+                    //need to add recursion method for unrevealing similiar cells
+                    
                     boardOne.printBoard();
 
-                    //need to add didLose method - when player hits the bomb
+                    //Win or lose check
 
                     if (boardOne.checkWin())
                         didWin = true;
+
+                    if (boardOne.checkLoss())
+                        didLose = true;
                     
                 }
-                Console.WriteLine("Congrats!! \n");
+                Console.WriteLine("Game Over!! \n");
                Console.WriteLine("restart? y/n");
                string answer = Console.ReadLine();
                 if (answer == "n")

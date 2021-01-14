@@ -56,6 +56,51 @@ namespace Minesweeper_ClassLibrary
             return (revealedCellCount == TheGrid.Length - BombsNum);               
         }
 
+        public void FloodFill(int x, int y)
+        {
+                TheGrid[x, y].IsHidden = false;
+
+
+            if (isValid(x - 1, y) && TheGrid[x-1,y].BombCounter > 0)
+                TheGrid[x - 1, y].IsHidden = false;
+
+            if (isValid(x + 1, y) && TheGrid[x + 1, y].BombCounter > 0)
+                TheGrid[x + 1, y].IsHidden = false;
+
+            if (isValid(x, y + 1) && TheGrid[x , y+1].BombCounter > 0)
+                TheGrid[x, y + 1].IsHidden = false;
+
+            if (isValid(x, y - 1) && TheGrid[x, y-1].BombCounter > 0)
+                TheGrid[x, y - 1].IsHidden = false;
+
+
+
+
+
+            if (isValid(x + 1, y))
+                if (TheGrid[x + 1, y].IsHidden == true)
+                    FloodFill(x + 1, y);
+               
+
+            if (isValid(x, y + 1))
+                if (TheGrid[x, y + 1].IsHidden == true)
+                    FloodFill(x, y + 1);
+
+                if (isValid(x - 1, y))
+                    if (TheGrid[x - 1, y].IsHidden == true)
+                        FloodFill(x - 1, y);
+
+                if (isValid(x , y - 1))
+                    if (TheGrid[x, y - 1].IsHidden == true)
+                        FloodFill(x, y - 1);
+
+        }
+
+        private bool isValid(int x, int y)
+        {
+            return (x >= 0 && x < Rows && y >= 0 && y < Columns && TheGrid[x,y].BombCounter == 0);
+        }
+
         public void printBoard()
         {
             for (int i = 0; i < Rows; i++)
@@ -78,6 +123,19 @@ namespace Minesweeper_ClassLibrary
             }
         }
 
+        public bool checkLoss()
+        {
+            bool loose = false;
+            for (int i = 0; i < Rows; i++)
+            {
+                for (int j = 0; j < Columns; j++)
+                {
+                    if (TheGrid[i, j].IsHidden == false && TheGrid[i, j].IsBomb == true)
+                        loose = true;
+                }
+            }
+            return loose;
+        }
 
         public void createBombs()
         {

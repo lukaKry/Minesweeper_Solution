@@ -20,7 +20,7 @@ namespace Minesweeper_ClassLibrary
             IsCounter = true;
             IsHidden = true;
             IsBomb = false;
-            VisibleValue = " ";
+            setVisibleValue();
             BombCounter = 0;
         }
 
@@ -33,11 +33,11 @@ namespace Minesweeper_ClassLibrary
         public void setVisibleValue()
         {
             if (IsBomb)
-                VisibleValue = " * ";
+                VisibleValue = "*";
             if (IsCounter)
-                VisibleValue = " " + BombCounter.ToString() + " ";
+                VisibleValue = "" + BombCounter.ToString() + "";
             if (IsHidden)
-                VisibleValue = " ? ";
+                VisibleValue = "?";
         }
 
     }
