@@ -16,3 +16,12 @@ C:\Users\krysz\source\repos\Minesweeper_Solution\Minesweeper_ClassLibrary\obj\De
 C:\Users\krysz\source\repos\Minesweeper_Solution\Minesweeper_ClassLibrary\obj\Debug\netstandard2.0\Minesweeper_ClassLibrary.csproj.CoreCompileInputs.cache
 C:\Users\krysz\source\repos\Minesweeper_Solution\Minesweeper_ClassLibrary\obj\Debug\netstandard2.0\Minesweeper_ClassLibrary.dll
 C:\Users\krysz\source\repos\Minesweeper_Solution\Minesweeper_ClassLibrary\obj\Debug\netstandard2.0\Minesweeper_ClassLibrary.pdb
+C:\Users\Łukasz\source\repos\Minesweeper_Solution\Minesweeper_ClassLibrary\bin\Debug\netstandard2.0\Minesweeper_ClassLibrary.deps.json
+C:\Users\Łukasz\source\repos\Minesweeper_Solution\Minesweeper_ClassLibrary\bin\Debug\netstandard2.0\Minesweeper_ClassLibrary.dll
+C:\Users\Łukasz\source\repos\Minesweeper_Solution\Minesweeper_ClassLibrary\bin\Debug\netstandard2.0\Minesweeper_ClassLibrary.pdb
+C:\Users\Łukasz\source\repos\Minesweeper_Solution\Minesweeper_ClassLibrary\obj\Debug\netstandard2.0\Minesweeper_ClassLibrary.csprojAssemblyReference.cache
+C:\Users\Łukasz\source\repos\Minesweeper_Solution\Minesweeper_ClassLibrary\obj\Debug\netstandard2.0\Minesweeper_ClassLibrary.AssemblyInfoInputs.cache
+C:\Users\Łukasz\source\repos\Minesweeper_Solution\Minesweeper_ClassLibrary\obj\Debug\netstandard2.0\Minesweeper_ClassLibrary.AssemblyInfo.cs
+C:\Users\Łukasz\source\repos\Minesweeper_Solution\Minesweeper_ClassLibrary\obj\Debug\netstandard2.0\Minesweeper_ClassLibrary.csproj.CoreCompileInputs.cache
+C:\Users\Łukasz\source\repos\Minesweeper_Solution\Minesweeper_ClassLibrary\obj\Debug\netstandard2.0\Minesweeper_ClassLibrary.dll
+C:\Users\Łukasz\source\repos\Minesweeper_Solution\Minesweeper_ClassLibrary\obj\Debug\netstandard2.0\Minesweeper_ClassLibrary.pdb

@@ -1,0 +1,13 @@
+C:\Users\krysz\source\repos\Minesweeper_Solution\Minesweeper_WindowsFormsApp\bin\Debug\Minesweeper_WindowsFormsApp.exe.config
+C:\Users\krysz\source\repos\Minesweeper_Solution\Minesweeper_WindowsFormsApp\bin\Debug\Minesweeper_WindowsFormsApp.exe
+C:\Users\krysz\source\repos\Minesweeper_Solution\Minesweeper_WindowsFormsApp\bin\Debug\Minesweeper_WindowsFormsApp.pdb
+C:\Users\krysz\source\repos\Minesweeper_Solution\Minesweeper_WindowsFormsApp\bin\Debug\Minesweeper_ClassLibrary.dll
+C:\Users\krysz\source\repos\Minesweeper_Solution\Minesweeper_WindowsFormsApp\bin\Debug\Minesweeper_ClassLibrary.pdb
+C:\Users\krysz\source\repos\Minesweeper_Solution\Minesweeper_WindowsFormsApp\obj\Debug\Minesweeper_WindowsFormsApp.csprojAssemblyReference.cache
+C:\Users\krysz\source\repos\Minesweeper_Solution\Minesweeper_WindowsFormsApp\obj\Debug\Minesweeper_WindowsFormsApp.Form1.resources
+C:\Users\krysz\source\repos\Minesweeper_Solution\Minesweeper_WindowsFormsApp\obj\Debug\Minesweeper_WindowsFormsApp.Properties.Resources.resources
+C:\Users\krysz\source\repos\Minesweeper_Solution\Minesweeper_WindowsFormsApp\obj\Debug\Minesweeper_WindowsFormsApp.csproj.GenerateResource.cache
+C:\Users\krysz\source\repos\Minesweeper_Solution\Minesweeper_WindowsFormsApp\obj\Debug\Minesweeper_WindowsFormsApp.csproj.CoreCompileInputs.cache
+C:\Users\krysz\source\repos\Minesweeper_Solution\Minesweeper_WindowsFormsApp\obj\Debug\Minesweeper_WindowsFormsApp.csproj.CopyComplete
+C:\Users\krysz\source\repos\Minesweeper_Solution\Minesweeper_WindowsFormsApp\obj\Debug\Minesweeper_WindowsFormsApp.exe
+C:\Users\krysz\source\repos\Minesweeper_Solution\Minesweeper_WindowsFormsApp\obj\Debug\Minesweeper_WindowsFormsApp.pdb
