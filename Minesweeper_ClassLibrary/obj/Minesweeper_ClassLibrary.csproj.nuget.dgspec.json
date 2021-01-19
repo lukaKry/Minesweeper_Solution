@@ -1,23 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\krysz\\source\\repos\\Minesweeper_Solution\\Minesweeper_ClassLibrary\\Minesweeper_ClassLibrary.csproj": {}
+    "C:\\Users\\Łukasz\\source\\repos\\Minesweeper_Solution\\Minesweeper_ClassLibrary\\Minesweeper_ClassLibrary.csproj": {}
   },
   "projects": {
-    "C:\\Users\\krysz\\source\\repos\\Minesweeper_Solution\\Minesweeper_ClassLibrary\\Minesweeper_ClassLibrary.csproj": {
+    "C:\\Users\\Łukasz\\source\\repos\\Minesweeper_Solution\\Minesweeper_ClassLibrary\\Minesweeper_ClassLibrary.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\krysz\\source\\repos\\Minesweeper_Solution\\Minesweeper_ClassLibrary\\Minesweeper_ClassLibrary.csproj",
+        "projectUniqueName": "C:\\Users\\Łukasz\\source\\repos\\Minesweeper_Solution\\Minesweeper_ClassLibrary\\Minesweeper_ClassLibrary.csproj",
         "projectName": "Minesweeper_ClassLibrary",
-        "projectPath": "C:\\Users\\krysz\\source\\repos\\Minesweeper_Solution\\Minesweeper_ClassLibrary\\Minesweeper_ClassLibrary.csproj",
-        "packagesPath": "C:\\Users\\krysz\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\krysz\\source\\repos\\Minesweeper_Solution\\Minesweeper_ClassLibrary\\obj\\",
+        "projectPath": "C:\\Users\\Łukasz\\source\\repos\\Minesweeper_Solution\\Minesweeper_ClassLibrary\\Minesweeper_ClassLibrary.csproj",
+        "packagesPath": "C:\\Users\\Łukasz\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Łukasz\\source\\repos\\Minesweeper_Solution\\Minesweeper_ClassLibrary\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Microsoft\\Xamarin\\NuGet\\"
         ],
         "configFilePaths": [
-          "C:\\Users\\krysz\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Łukasz\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
         ],
@@ -61,7 +61,7 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.101\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.102\\RuntimeIdentifierGraph.json"
         }
       }
     }

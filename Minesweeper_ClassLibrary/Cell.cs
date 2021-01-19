@@ -36,7 +36,7 @@ namespace Minesweeper_ClassLibrary
                 VisibleValue = "*";
             if (IsCounter)
                 if (BombCounter == 0)
-                    VisibleValue = ".";
+                    VisibleValue = "";
                 else
                     VisibleValue = "" + BombCounter.ToString() + "";
             if (IsHidden)

@@ -63,6 +63,16 @@ namespace Minesweeper_WindowsFormsApp.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap bomb_pixel {
+            get {
+                object obj = ResourceManager.GetObject("bomb_pixel", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap pix_flag_red_512 {
             get {
                 object obj = ResourceManager.GetObject("pix_flag_red-512", resourceCulture);
