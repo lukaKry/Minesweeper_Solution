@@ -1,0 +1,6 @@
+noname, 5000
+Łuks, 7
+Lukas, 5
+Łukasz, 2
+Łukasz, 6
+
