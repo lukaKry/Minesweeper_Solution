@@ -10,6 +10,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.IO;
 using System.Reflection;
+using System.Diagnostics;
 
 namespace Minesweeper_WindowsFormsApp
 {
@@ -22,18 +23,24 @@ namespace Minesweeper_WindowsFormsApp
         
         private int revealedCells;
         private int flagged;
-        
+
+        private Stopwatch watch = new Stopwatch();
+
 
 
         public Form1()
         {
             InitializeComponent();
-            
+            comboBox_LevelPicker.SelectedIndex = 0;
+
         }
 
         public void populateGrid()
         {
             panel_GridHolder.Controls.Clear();
+            timer1.Enabled = true;
+            watch.Reset();
+            watch.Start();
 
             int x, y = 0;
             switch (comboBox_LevelPicker.Text)
@@ -156,12 +163,56 @@ namespace Minesweeper_WindowsFormsApp
                 if (boardOne.checkWin())
                 {
                     drawBombs();
-                    MessageBox.Show("Congrats!");
+                    watch.Stop();
+                    
+                    ResultList.Score = (int)Math.Round(watch.Elapsed.TotalSeconds);
+                    Form3 form3 = new Form3();
+                    form3.ShowDialog();
+                    if (form3.DialogResult == DialogResult.OK)
+                    {
+                        Result rst = new Result(ResultList.Nick, ResultList.Score);
+
+                        switch (comboBox_LevelPicker.Text)
+                        {
+                            case "easy":
+                                ResultList.EasyLevel.Add(rst);
+                                string currentDirectory = Directory.GetCurrentDirectory();
+                                string filePathEasy = currentDirectory;
+                                filePathEasy += @"\BestScores_easy.txt";
+                                string[] saveResult = { $"{ResultList.Nick}, {ResultList.Score}" };
+                                File.AppendAllText(filePathEasy, $"{ResultList.Nick}, {ResultList.Score}" + Environment.NewLine);
+                                break;
+                            case "normal":
+                                ResultList.NormalLevel.Add(rst);
+                                string currentDirectoryN = Directory.GetCurrentDirectory();
+                                string filePathNormal = currentDirectoryN;
+                                filePathNormal += @"\BestScores_normal.txt";
+                                string[] saveResultN = { $"{ResultList.Nick}, {ResultList.Score}" };
+                                File.AppendAllText(filePathNormal, $"{ResultList.Nick}, {ResultList.Score}" + Environment.NewLine);
+                                break;
+                            case "hard":
+                                ResultList.HardLevel.Add(rst);
+                                string currentDirectoryH = Directory.GetCurrentDirectory();
+                                string filePathHard = currentDirectoryH;
+                                filePathHard += @"\BestScores_hard.txt";
+                                string[] saveResultH = { $"{ResultList.Nick}, {ResultList.Score}" };
+                                File.AppendAllText(filePathHard, $"{ResultList.Nick}, {ResultList.Score}" + Environment.NewLine);
+                                break;
+                            default:
+                                break;
+                        }
+                    }
+                    else
+                        MessageBox.Show("ups");
+
+
+                    
                 }
 
                 if (boardOne.checkLoss())
                 {
                     drawBombs();
+                    watch.Stop();
                     MessageBox.Show("Game Over!");
                 }
             }
@@ -205,6 +256,19 @@ namespace Minesweeper_WindowsFormsApp
                     }
                 }
             }
+        }
+
+        private void timer1_Tick(object sender, EventArgs e)
+        {
+           TimeSpan ts = watch.Elapsed;
+            string elapsedTime = String.Format("{0:00}:{1:00}", ts.Minutes, ts.Seconds);
+            label_time.Text = elapsedTime;
+        }
+
+        private void button2_bestScores_Click(object sender, EventArgs e)
+        {
+            Form2 bestScores = new Form2();
+            bestScores.Show();
         }
 
         private void countRevealedCells()

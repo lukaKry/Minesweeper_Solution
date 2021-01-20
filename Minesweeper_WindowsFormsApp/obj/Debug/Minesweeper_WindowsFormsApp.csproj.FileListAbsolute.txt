@@ -24,3 +24,5 @@ C:\Users\Łukasz\source\repos\Minesweeper_Solution\Minesweeper_WindowsFormsApp\o
 C:\Users\Łukasz\source\repos\Minesweeper_Solution\Minesweeper_WindowsFormsApp\obj\Debug\Minesweeper_WindowsFormsApp.csproj.CopyComplete
 C:\Users\Łukasz\source\repos\Minesweeper_Solution\Minesweeper_WindowsFormsApp\obj\Debug\Minesweeper_WindowsFormsApp.exe
 C:\Users\Łukasz\source\repos\Minesweeper_Solution\Minesweeper_WindowsFormsApp\obj\Debug\Minesweeper_WindowsFormsApp.pdb
+C:\Users\krysz\source\repos\Minesweeper_Solution\Minesweeper_WindowsFormsApp\obj\Debug\Minesweeper_WindowsFormsApp.Form2.resources
+C:\Users\krysz\source\repos\Minesweeper_Solution\Minesweeper_WindowsFormsApp\obj\Debug\Minesweeper_WindowsFormsApp.Form3.resources
